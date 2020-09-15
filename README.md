@@ -1,5 +1,5 @@
 # core-v-verif
-Functional verification project for the CORE-V family of RISC-V cores. This project is under active development.
+Functional verification project for the CORE-V family of RISC-V cores. This project is under active development!
 
 ## NEWS UPDATES:
 **2020-10-15**: Aldec's Riviera-PRO SystemVerilog simulator is now supported by core-v-verif.  Check out the README in [cv32/sim/uvmt_cv32](https://github.com/openhwgroup/core-v-verif/tree/master/cv32/sim/uvmt_cv32#running-the-environment-with-aldec-riviera-pro-riviera) for more information.
