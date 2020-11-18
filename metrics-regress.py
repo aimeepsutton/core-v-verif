@@ -65,7 +65,7 @@ while True:
             break
         if 'buildFailed' in regressionData['status']:
             print('A build has failed. No tests will be run')
-            print('Debug at: https://'nightly.metrics.ca/' + args.projectId + \
+            print('Debug at: https://nightly.metrics.ca/' + args.projectId + \
                   '/results/regressionRuns/' + regressionRunId)
             exit(1)
 
