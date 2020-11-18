@@ -30,7 +30,7 @@ parser.add_argument('projectId',      help='The ID of the Metrics project')
 args = parser.parse_args()
 
 ## Server
-server =  'openhwgroup.metrics.ca:443'
+server =  'nightly.metrics.ca:443'
 
 ## API Endpoints
 postRegression = '/api/v1/projects/'+args.projectId+'/regressionRuns'
@@ -65,7 +65,7 @@ while True:
             break
         if 'buildFailed' in regressionData['status']:
             print('A build has failed. No tests will be run')
-            print('Debug at: https://'+ os.environ['CLIENT'] + '.metrics.ca/' + args.projectId + \
+            print('Debug at: https://'nightly.metrics.ca/' + args.projectId + \
                   '/results/regressionRuns/' + regressionRunId)
             exit(1)
 
@@ -97,7 +97,7 @@ if regressionData['lineCoverage'] is not None:
     print('Code (block): ' + str(math.trunc(regressionData['lineCoverage']*100) /100))
 print('\n')
 
-print('Full results at: https://openhwgroup.metrics.ca/' + args.projectId + \
+print('Full results at: https://nightly.metrics.ca/' + args.projectId + \
       '/results/regressionRuns/' + regressionRunId)
       
 ## Set the exit code to be used by github action
