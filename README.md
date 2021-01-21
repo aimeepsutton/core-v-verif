@@ -1,3 +1,5 @@
+![metrics-regress](https://github.com/aimeepsutton/core-v-verif/workflows/metrics-regress/badge.svg?branch=master&event=push)
+
 # core-v-verif
 Functional verification project for the CORE-V family of RISC-V cores. This project is under active development!!!
 
