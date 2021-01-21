@@ -117,7 +117,7 @@ tests:
     description: Static riscv-dv arithmetic test
     dir: cv32/sim/uvmt_cv32    
     cmd: make test COREV=YES TEST=riscv_arithmetic_basic_test
-    num: 2
+    num: 26
     iss: 0
 
   corev_arithmetic_base_test:
@@ -133,7 +133,7 @@ tests:
     description: Generated corev-dv random instruction test
     dir: cv32/sim/uvmt_cv32
     cmd: make gen_corev-dv test COREV=YES TEST=corev_rand_instr_test
-    num: 2
+    num: 27
     iss: 0
 
   corev_rand_illegal_instr_test:
